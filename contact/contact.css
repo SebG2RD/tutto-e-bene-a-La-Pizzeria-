@@ -5,6 +5,7 @@
     --light-yellow: #fff8e5;
     --dark: #5b454e;
 }
+
 header{
     display: flex;
     justify-content: space-between;
@@ -13,37 +14,43 @@ header{
 
 .whitesquare{
     background-color:white;
-    width: 49rem;
-    height: 39rem;
+    width: 61rem;
+    height: 44rem;
     position: relative;
-    top: 39.5rem;
+    top: 44.5rem;
     left: 38.5rem;
 }
 .yellowsquare1{
     background-color: var(--yellow);
-    width: 50rem;
-    height: 40rem;
+    width: 62rem;
+    height: 45rem;
     margin-left: 38rem;
 }
 .square{
-
     position: relative;
-
-    top: -2rem;
+    top: -40rem;
+    right: 35rem;
 }
 .contacts{
     display: flex;
+    position: relative;
+    left: 52rem;
+    top: 33rem;    
 }
-
+.contacts h1{
+    position: relative;
+    bottom: 8rem;
+    left: 24.5rem;
+}
 .contacts ul{
     flex-direction: column;
 }
 
 main ul img{
-    width: 2.5rem;
+    width: 2.2rem;
 }
 .infos{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 li{
     text-decoration: none;
@@ -52,8 +59,8 @@ li{
 .restaurant{
     width: 50rem;
     position: relative;
-    bottom: 22rem;
-    left: 50rem;
+    bottom: 29rem;
+    left: 60rem;
 }
 button{
     border-radius: 100%;
@@ -62,9 +69,64 @@ button{
 }
 .socialmedia{
     position:fixed;
-    left: 110rem;
-    bottom: 20rem;
+    left: 115rem;
+    bottom: 23rem;
     display: flex;
     flex-direction: column;
-
 }
+form img{
+    width: 2rem;
+}
+.contact-form{
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.left-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.left-contact-title h4{
+    font-weight: 600;
+    color: var(--red);
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+.left-contact-title hr{
+    border: none;
+    width: 15rem;
+    height: 0.8rem;
+    background-color: var(--yellow);
+    border-radius: 5rem;
+    margin-bottom: 2rem;
+}
+.contact-inputs{
+    width: 35rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    color: black;
+    border-radius: 5rem;
+    background-color: var(--light-yellow);
+}
+.left-contact textarea{
+    height: 10rem;
+    width: 35rem;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    color: black;
+    border-radius: 1rem;
+    background-color: var(--light-yellow);
+}
+.contact-inputs:focus{
+    border: 2px solid var(--dark);
+}
+.textearea:focus{
+    border: 2px solid var(--dark);
+}
+
