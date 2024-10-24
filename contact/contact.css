@@ -26,16 +26,19 @@ header{
     margin-left: 38rem;
 }
 .square{
+
     position: relative;
+
     top: -2rem;
 }
 .contacts{
     display: flex;
 }
+
 .contacts ul{
     flex-direction: column;
-
 }
+
 main ul img{
     width: 2.5rem;
 }
@@ -63,4 +66,5 @@ button{
     bottom: 20rem;
     display: flex;
     flex-direction: column;
+
 }
