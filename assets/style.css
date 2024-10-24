@@ -22,6 +22,7 @@ h1 {
 }
 h2 {
     font-size: 4rem;
+    text-align: left;
 }
 a {
     text-decoration: none;
@@ -49,21 +50,21 @@ span {
     font-weight: bold;
 }
 .btn-secondary a {
-    background-color: var(--light-yellow);
+    background-color: var(--white);
     color: var(--red);
     font-size: 1.2rem;
     font-weight: bold;
 }
 .btn-primaire a {
     background-color: var(--blue);
-    color: var(--light-yellow);
+    color: var(--white);
 }
 .btn-third {
     text-align: center;
 }
 .btn-third a {
     background-color: var(--red);
-    color: var(--light-yellow);
+    color: var(--white);
 }
 /* reglage globaux du site web */
 
@@ -120,6 +121,7 @@ article {
     text-align: center;;
 }
 .card h2 {
+    text-align: center;
     color: var(--red);
     font-family: "Pontano";
     font-size: 2rem;
@@ -158,10 +160,33 @@ article {
 }
 .nos-pizzas {
     padding: 5rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.nos-pizzas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-yellow);
+    clip-path: polygon(90.82% 11.44%, 100% 8.16%, 100% 96.57%, 82.65% 85%, 67.6% 74.95%, 58.42% 62.06%, 56.46% 49.11%, 60.83% 36.77%, 71.62% 27.66%, 82.65% 20.39%);
+    z-index: -1;
 }
 .nos-pizzas-top, .nos-pizzas-bottom {
     align-items: center;
     justify-content: space-evenly;
+}
+.nos-pizzas li {
+    width: 100%;
+}
+.nos-pizzas-top span {
+    color: var(--red);
+}
+.nos-pizzas-bottom {
+    text-align: center;
 }
 .nos-pizzas-bottom li img {
     background-color: var(--blue);
@@ -226,6 +251,9 @@ article {
 
 .livraison {
     padding: 5rem;
+}
+.livraison h2 {
+    text-align: left;
 }
 .livraison ul {
     justify-content: space-around;
