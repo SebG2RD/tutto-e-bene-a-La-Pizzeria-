@@ -55,11 +55,12 @@
                 <li><button><img src="images/facebook.png" alt="logo facebook"></button></li>
             </ul>
             <div class="contact-form">
-                <form action="" class="left-contact">
+                <form action="https://api.web3forms.com/submit" method="POST" class="left-contact">
                 <div class="left-contact-title">
                     <h4>Contacter Nous!</h4>
                     <hr>
                 </div>
+                <input type="hidden" name="access_key" value="b45daebb-c9ae-4721-9902-d6461aa0c37f">
                 <input type="text" name="Nom" placeholder="Votre nom et prénom" class="contact-inputs" required>
                 <input type="text" name="email" placeholder="Votre mail" class="contact-inputs" required>
                 <textarea name="texte" placeholder="votre message" class="contact-inputs" required ></textarea>
