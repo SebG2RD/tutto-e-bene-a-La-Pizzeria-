@@ -1,11 +1,3 @@
-:root {
-    --red : #df5e5e;
-    --blue : #06a19d;
-    --yellow: #ffb345;
-    --light-yellow: #fff8e5;
-    --dark: #5b454e;
-}
-
 header{
     display: flex;
     justify-content: space-between;
