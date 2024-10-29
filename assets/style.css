@@ -344,6 +344,9 @@ footer a {
 .formulaire {
     gap: 2rem;
 }
+.center {
+    text-align: center;
+}
 .formulaire {
     justify-content: center;
     margin-top: 2rem;
