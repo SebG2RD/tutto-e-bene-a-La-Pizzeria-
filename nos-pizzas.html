@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="assets/style.css">
     <title>Chez Jonathan Pizzeria</title>
 </head>
 <body>
     <nav>
-        <ul class="navbar">
+        <ul class="navbar" id="navbar">
             <li class="navbar-left">
                 <ul>
                     <li><a href="index.html"><img src="./assets/img/logo pizzeria.png" alt="Logo pizzeria"></a></li>
@@ -29,298 +30,1662 @@
             <div class="container">
                 <h1>Nos pizzas</h1>
             </div>
+            <ul class="container formulaire">
+                <li>
+                    <input type="radio" name="Small" id="livraison">
+                    <label for="livraison">Livraison</label>
+                </li>
+                <li>
+                    <input type="radio" name="Small" id="Emporter">
+                    <label for="Emporter">A Emporter</label>
+                </li>
+            </ul>
+            <ul class="container formulaire">
+                <li>
+                    <input type="radio" name="Base" id="fraiche">
+                    <label for="fraiche">Base crème fraiche</label>
+                </li>
+                <li>
+                    <input type="radio" name="Base" id="base">
+                    <label for="base">Base tomate</label>
+                </li>
+            </ul>
+            <ul class="container formulaire btn btn-primaire">
+                <li><a href="#Carnivos">Les Carnivors</a></li>
+                <li><a href="#addicts">Les fromages addicts</a></li>
+                <li><a href="#classiques">Les grands classiques</a></li>
+            </ul>
         </section>
-        <article>
-                <ul class="container commande-list">
-                    <li class="commande">
-                        <div class="commande-image">
-                            <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+        <article class="container">
+            <h2 id="Carnivors">Les Carnivors</h2>
+            <ul class="commande-list">
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>4 fromages</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
                         </div>
-                    </li>
-                    <li class="commande"> 
-                        <div class="commande-image">
-                            <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>Campagnard</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
                         </div>
-                    </li>
-                    <li class="commande"> 
-                        <div class="commande-image">
-                            <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>Cannibale</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
                         </div>
-                    </li>
-                    <li class="commande">
-                        <div class="commande-image">
-                            <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>4 fromages</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
                         </div>
-                    </li>
-                    <li class="commande"> 
-                        <div class="commande-image">
-                            <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>Campagnard</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                    </div>
+                </li>
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
                         </div>
-                    </li>
-                    <li class="commande"> 
-                        <div class="commande-image">
-                            <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>Cannibale</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
                         </div>
-                    </li>
-                    <li class="commande">
-                        <div class="commande-image">
-                            <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>4 fromages</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
                         </div>
-                    </li>
-                    <li class="commande"> 
-                        <div class="commande-image">
-                            <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>Campagnard</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
                         </div>
-                    </li>
-                    <li class="commande"> 
-                        <div class="commande-image">
-                            <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>Cannibale</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
                         </div>
-                    </li>
-                    <li class="commande">
-                        <div class="commande-image">
-                            <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                </li>
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>4 fromages</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
                         </div>
-                    </li>
-                    <li class="commande"> 
-                        <div class="commande-image">
-                            <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>Campagnard</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
                         </div>
-                    </li>
-                    <li class="commande"> 
-                        <div class="commande-image">
-                            <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>Cannibale</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
                         </div>
-                    </li>
-                    <li class="commande">
-                        <div class="commande-image">
-                            <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>4 fromages</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
                         </div>
-                    </li>
-                    <li class="commande"> 
-                        <div class="commande-image">
-                            <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>Campagnard</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                    </div>
+                </li>
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
                         </div>
-                    </li>
-                    <li class="commande"> 
-                        <div class="commande-image">
-                            <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>Cannibale</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
                         </div>
-                    </li>
-                    <li class="commande">
-                        <div class="commande-image">
-                            <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>4 fromages</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
                         </div>
-                    </li>
-                    <li class="commande"> 
-                        <div class="commande-image">
-                            <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>Campagnard</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
                         </div>
-                    </li>
-                    <li class="commande"> 
-                        <div class="commande-image">
-                            <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
                         </div>
-                        <div class="commande-container">
-                            <div class="commande-title">
-                                <h2>Cannibale</h2>
-                            </div>
-                            <div class="commande-compo">
-                                <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
-                            </div>
-                            <div class="btn btn-primaire">
-                                <a href="">Commandez</a>
-                            </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </li>
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <h2 id="addicts">Les fromages addicts</h2>
+            <ul class="commande-list">
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <h2 id="classiques">Les grands classiques</h2>
+            <ul class="commande-list">
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande">
+                    <div class="commande-image">
+                        <img src="assets/img/4-fromages.avif" alt="pizza 4 frogmages">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>4 fromages</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce tomate, mozzarella, chèvre, fromage râpé (Gouda & Emmental), Fourme d’Ambert AOP.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/campagnard.avif" alt="pizza campagnard">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Campagnard</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Crème fraîche légère française, mozzarella, poulet rôti, jambon, lardons fumés, fromage râpé (gouda & emmental).</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="commande"> 
+                    <div class="commande-image">
+                        <img src="assets/img/cannibal.avif" alt="pizza cannibal">
+                    </div>
+                    <div class="commande-container">
+                        <div class="commande-title">
+                            <h2>Cannibale</h2>
+                        </div>
+                        <div class="commande-compo">
+                            <p>Sauce barbecue, mozzarella, poulet rôti, merguez, haché au boeuf gout flammé.</p>
+                        </div>
+                        <ul class="select">
+                            <li>
+                                <input type="radio" name="Small" id="Small">
+                                <label for="Small">Small</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Médium">
+                                <label for="Médium">Médium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Small" id="Large">
+                                <label for="Large">Large</label>
+                            </li>
+                        </ul>
+                        <div class="btn btn-third">
+                            <a href="">Commandez</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </article>
         <section class="livraison">
             <div class="container">
@@ -348,5 +1713,8 @@
             <li><a href="./contact/contact.html">Nous contacter</a></li>
         </ul>
     </footer>
+    <div class="haut">
+        <a href="#navbar"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
 </body>
 </html>
