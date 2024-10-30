@@ -526,6 +526,8 @@ a{
     justify-content: center;
 } 
 
+/* Code Alexis CSS Page contact */
+
 @media (width < 1000px ) {
     .navbar, .slider, .trust-list, .nos-pizzas-bottom {
         flex-direction: column;
@@ -565,7 +567,10 @@ a{
         bottom: 2rem;
         right: 2rem;
     }
+    /* Code alexis */
     
+
+    /* Code alexis */ 
 }
 
 @media (width < 750px) {
@@ -588,5 +593,7 @@ a{
         bottom: 1rem;
         right: 1rem;
     }
+   /* Code alexis */
    
+   /* Code alexis */
 }
