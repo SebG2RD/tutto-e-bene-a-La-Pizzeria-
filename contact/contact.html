@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <link rel="stylesheet" href="../assets/style.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <nav>
+        <div class="container">
             <ul class="navbar">
                 <li class="navbar-left">
                     <ul>
-                        <li><a href="../index.html"><img src="../assets/img/logo pizzeria.png" alt="Logo pizzeria"></a></li>
+                        <li><a href="index.html"><img src="images/logo pizzeria.png" alt="Logo pizzeria"></a></li>
                         <li>Qui sommes-nous ?</li>
                         <li>Nos pizzas</li>
                         <li>Commander</li>
@@ -22,62 +20,73 @@
                 </li>
                 <li class="navbar-right">
                     <div class="btn btn-secondary">
-                        <a href="#">Nous contacter</a>
+                        <a href="./contact/contact.html">Nous contacter</a>
                     </div>
                 </li>
             </ul>
-        </nav>    
-    </header>
+        </div>
+    </nav>
     <main>
- <section class="contacts" >
-            <h1>contacter nous</h1>
-          <ul>
-            <li><img src="images/enveloppe.png" alt=""></li>
-            <li><img src="images/telephone.png" alt=""></li>
-            <li><img src="images/lieu.png" alt=""></li>
-          </ul>
-         <ul>
-            <li class="infos" >chezjonathan@gmail.com</li>
-            <li class="infos">02 53 69 81 47</li>
-            <li class="infos">13 Rue Maréchal Foch, 42153 Riorges</li>
-         </ul>
-        </section>
-        <section class="square">           
-            <div class="whitesquare"></div>
-            <div class="yellowsquare1"></div>
-            <img class="restaurant" src="images/restaurant.jpg" alt="photo restaurant">
-        </section>
+        <section class="premier">
+            <ul>
+                <li class="premier-left">
+                    <img src="images/restaurant.jpg" alt="">
+                </li>
+                <li class="premier-right">
+                    <ul class="premier-info">
+                        <li>
+                            <a href="tel:000000000"><img src="images/telephone.png" alt="image téléphone">00 00 00 00 00</a>
+                        </li>
+                        <li>
+                            <a href="mailto:alexis.benamar03@gmail.com"><img src="images/enveloppe.png" alt="mail">Exemple email</a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/lieu.png" alt="lieu">Adresse</a>
+                        </li>
+                    </ul>
 
+                </li>
+            </ul>
+
+        </section>
+        <section class="second">
+            <ul>
+                <li class="form">
+                    <div class="contact-form">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="left-contact">
+                            <div class="left-contact-title">
+                                <h4>Contacter Nous!</h4>
+                                <hr>
+                            </div>
+                            <input type="hidden" name="access_key" value="b45daebb-c9ae-4721-9902-d6461aa0c37f">
+                            <input type="text" name="Nom" placeholder="Votre nom et prénom" class="contact-inputs" required>
+                            <input type="text" name="email" placeholder="Votre mail" class="contact-inputs" required>
+                            <textarea name="texte" placeholder="votre message" rows="15" class="contact-inputs" required ></textarea>
+                            <button type="submit">Envoyer <img src="images/envoyer.png" alt=""></button>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <div class="right-contact" >
+                        <img src="images/image_form.png" alt="images formulaires">
+                    </div>
+                </li>
+            </ul>
+        </section>
         <section>
             <ul class="socialmedia">
                 <a href="https://www.instagram.com"><li><button><img src="images/instagram.png" alt="logo instagram"></button></li></a>
-                <li><button><img src="images/twitter.png" alt="logo twitter/x"></button></li>
-                <li><button><img src="images/facebook.png" alt="logo facebook"></button></li>
+               <a href="https://www.x.com"> <li><button><img src="images/twitter.png" alt="logo twitter/x"></button></li></a>
+                <a href="https://www.facebook.com"><li><button><img src="images/facebook.png" alt="logo facebook"></button></li></a>
             </ul>
-            <div class="contact-form">
-                <form action="https://api.web3forms.com/submit" method="POST" class="left-contact">
-                <div class="left-contact-title">
-                    <h4>Contacter Nous!</h4>
-                    <hr>
-                </div>
-                <input type="hidden" name="access_key" value="b45daebb-c9ae-4721-9902-d6461aa0c37f">
-                <input type="text" name="Nom" placeholder="Votre nom et prénom" class="contact-inputs" required>
-                <input type="text" name="email" placeholder="Votre mail" class="contact-inputs" required>
-                <textarea name="texte" placeholder="votre message" class="contact-inputs" required ></textarea>
-                <button type="submit">Envoyer <img src="images/envoyer.png" alt=""></button>
-                </form>
-                <div class="right-contact" >
-                    <img src="images/image_form.png" alt="images formulaires">
-                </div>
-            </div>
+        </section>
+        <footer>
+            <ul>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="./contact/contact.html">Nous contacter</a></li>
+            </ul>
+        </footer>
     </main>
-    <footer>
-        <ul>
-            <li><a href="#">Politique de confidentialité</a></li>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="/contact/contact.html">Nous contacter</a></li>
-        </ul>
-    </footer>
-
 </body>
 </html>
