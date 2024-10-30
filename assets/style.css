@@ -380,60 +380,6 @@ footer a {
 .commande h2 {
     font-size: 2rem;
 }
-
-/* Contact  */
-.contacts {
-    display: flex;
-    flex-direction: column;
-}
-.contacts img, .socialmedia img, button img {
-    width: 3rem;
-}
-.contacts ul {
-    flex-direction: column;
-}
-.square {
-    height: 100vh;
-    background-color: var(--yellow);
-    clip-path: polygon(0% 0%, 0% 100%, 14% 100%, 12% 11%, 87% 10%, 87% 86%, 14% 86%, 14% 100%, 100% 100%, 100% 0%);
-    border: 2px solid var(--yellow);
-    padding: 5rem 6rem;
-}
-
-
-.socialmedia, form {
-    display: flex;
-    flex-direction: column;
-}
-.socialmedia {
-    position: fixed;
-    top: 25rem;
-    left: 95VW;
-}
-.contact-form {
-    display: flex;
-}
-input, textarea {
-    margin: 0 0 2rem;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-}
-.right-contact img, .left-contact {
-    width: 100%;
-}
-.left-contact button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--red);
-    color: var(--white);
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    margin-top: 2rem;
-}
-.left-contact button img {
-    width: 2rem;
-}
 .haut a {
     color: var(--white);
     width: 5rem;
@@ -467,6 +413,118 @@ input, textarea {
     background-color: var(--red);
 }
 
+
+/* Code Alexis CSS Page contact */
+form img{
+    width: 2rem;
+}
+.contact-form{
+    display: flex;
+}
+.left-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-right: 4.5rem;
+}
+.left-contact-title h4{
+    font-weight: 600;
+    color: var(--red);
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+.left-contact-title hr{
+    border: none;
+    width: 15rem;
+    height: 0.8rem;
+    background-color: var(--yellow);
+    border-radius: 5rem;
+    margin-bottom: 2rem;
+}
+.contact-inputs{
+    width: 50rem;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    color: black;
+    border-radius: 5rem;
+    background-color: var(--light-yellow);
+}
+.left-contact textarea{
+    font-weight: 400;
+    color: black;
+    border-radius: 1rem;
+    background-color: var(--light-yellow);
+}
+.contact-inputs:focus{
+    border: 2px solid var(--dark);
+}
+.textearea:focus{
+    border: 2px solid var(--dark);
+}
+.left-contact button{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: black;
+    gap: 20px;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--light-yellow);
+    cursor: pointer;
+}
+.right-contact img{
+    width: 60rem;
+}
+.premier-info img {
+    width: 3rem;
+}
+.premier-left img {
+    width: 50rem;
+}
+.premier ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.socialmedia{
+    position:fixed;
+    left: 109rem;
+    bottom: 23rem;
+    display: flex;
+    flex-direction: column;
+}
+.socialmedia img{
+    width: 4rem;
+}
+.socialmedia button{
+        border-radius: 100%;
+        background-color: transparent;
+        border-color: transparent;
+        cursor: pointer;
+}
+.premier-info{
+    flex-direction: column;
+    font-size: 3rem;
+    gap: 1.5rem;
+    margin-right: 22rem;
+}
+.premier-info li{
+    gap: rem;
+}
+a{
+    text-decoration-line: none;
+    color: black;
+}
+.second ul{
+    display: flex;
+    align-content: center;
+}
+.second{
+    display: flex;
+    justify-content: center;
+} 
 
 @media (width < 1000px ) {
     .navbar, .slider, .trust-list, .nos-pizzas-bottom {
