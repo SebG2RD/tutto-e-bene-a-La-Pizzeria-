@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="contact/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="navbar-left">
+                    <ul>
+                        <li><a href="index.html"><img src="./assets/img/logo pizzeria.png" alt="Logo pizzeria"></a></li>
+                        <li>Qui sommes-nous ?</li>
+                        <li><a href="nos-pizzas.html">Nos pizzas</a></li>
+                        <li>Commander</li>
+                    </ul>
+                </li>
+                <li class="navbar-right">
+                    <div class="btn btn-secondary">
+                        <a href="contact.html">Nous contacter</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <section class="contacts" >
+                <h1>contacter nous</h1>
+                <ul>
+                    <li><img src="assets/img/enveloppe.png" alt=""></li>
+                    <li><img src="assets/img/telephone.png" alt=""></li>
+                    <li><img src="assets/img/lieu.png" alt=""></li>
+                </ul>
+                <ul>
+                    <li class="infos" >chezjonathan@gmail.com</li>
+                    <li class="infos">02 53 69 81 47</li>
+                    <li class="infos">13 Rue Maréchal Foch, 42153 Riorges</li>
+                </ul>
+            </section>
+            <section class="square">           
+                <div class="whitesquare"></div>
+                <div class="yellowsquare1"></div>
+                <img class="restaurant" src="assets/img/restaurant.jpg" alt="photo restaurant">
+            </section>
+            <section>
+                <ul class="socialmedia">
+                    <a href="https://www.instagram.com"><li><button><img src="assets/img/instagram.png" alt="logo instagram"></button></li></a>
+                    <li><button><img src="assets/img/twitter.png" alt="logo twitter/x"></button></li>
+                    <li><button><img src="assets/img/facebook.png" alt="logo facebook"></button></li>
+                </ul>
+                <div class="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="left-contact">
+                        <div class="left-contact-title">
+                            <h4>Contacter Nous!</h4>
+                            <hr>
+                        </div>
+                        <input type="hidden" name="access_key" value="b45daebb-c9ae-4721-9902-d6461aa0c37f">
+                        <input type="text" name="Nom" placeholder="Votre nom et prénom" class="contact-inputs" required>
+                        <input type="text" name="email" placeholder="Votre mail" class="contact-inputs" required>
+                        <textarea name="texte" placeholder="votre message" class="contact-inputs" required ></textarea>
+                        <button type="submit" class="btn btn-third">Envoyer <img src="assets/img/envoyer.png" alt=""></button>
+                    </form>
+                    <div class="right-contact" >
+                        <img src="assets/img/image_form.png" alt="images formulaires">
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

@@ -13,6 +13,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 h1 , h2, h3 {
     font-family: "Pinyon Script";
@@ -48,17 +49,23 @@ span {
     border-radius: 2rem;
     font-size: 1.2rem;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 .btn-secondary a {
     background-color: var(--white);
     color: var(--red);
-    font-size: 1.2rem;
-    font-weight: bold;
+}
+.btn-secondary a:hover{
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 .btn-primaire a {
     background-color: var(--blue);
     color: var(--white);
+}
+.btn-primaire a:hover{
+    background-color: var(--red);
 }
 .btn-third {
     text-align: center;
@@ -66,6 +73,9 @@ span {
 .btn-third a {
     background-color: var(--red);
     color: var(--white);
+}
+.btn-third a:hover{
+    background-color: var(--blue);
 }
 /* reglage globaux du site web */
 
@@ -86,6 +96,9 @@ nav {
 }
 .navbar img {
     width: 10rem;
+}
+.navbar-left a {
+    color: var(--light-yellow);
 }
 
 .title {
@@ -327,4 +340,193 @@ footer a {
     color: var(--white);
 }
 
+/* Pizza */ 
+.formulaire {
+    gap: 2rem;
+}
+.center {
+    text-align: center;
+}
+.formulaire {
+    justify-content: center;
+    margin-top: 2rem;
+}
+.formulaire input {
+    margin-right: 1rem;
+}
+.commande-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.commande {
+    background-color: var(--light-yellow);
+    margin: 2rem;
+    max-width: 100%;
+    width: 300px;
+}
+.commande img {
+    width: 100%;
+}
+.select {
+    gap: 1rem;
+}
+.commande-container {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 1rem;
+}
+.commande h2 {
+    font-size: 2rem;
+}
 
+/* Contact  */
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+.contacts img, .socialmedia img, button img {
+    width: 3rem;
+}
+.contacts ul {
+    flex-direction: column;
+}
+.square {
+    height: 100vh;
+    background-color: var(--yellow);
+    clip-path: polygon(0% 0%, 0% 100%, 14% 100%, 12% 11%, 87% 10%, 87% 86%, 14% 86%, 14% 100%, 100% 100%, 100% 0%);
+    border: 2px solid var(--yellow);
+    padding: 5rem 6rem;
+}
+
+
+.socialmedia, form {
+    display: flex;
+    flex-direction: column;
+}
+.socialmedia {
+    position: fixed;
+    top: 25rem;
+    left: 95VW;
+}
+.contact-form {
+    display: flex;
+}
+input, textarea {
+    margin: 0 0 2rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+.right-contact img, .left-contact {
+    width: 100%;
+}
+.left-contact button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+.left-contact button img {
+    width: 2rem;
+}
+.haut a {
+    color: var(--white);
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--blue);
+    border-radius: 2.5rem;
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    z-index: 999;
+}
+.select input[type="radio"], .formulaire input[type="radio"]{
+    display: none;
+}
+.select label, .formulaire label {
+    padding: 0.8rem 1rem;
+    border-radius: 2rem;
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.select input[type="radio"]:checked + label, .formulaire input[type="radio"]:checked + label {
+    background-color: var(--red);
+    color: white;
+}
+.select label:hover, .formulaire label:hover, .formulaire a:hover {
+    background-color: var(--red);
+}
+
+
+@media (width < 1000px ) {
+    .navbar, .slider, .trust-list, .nos-pizzas-bottom {
+        flex-direction: column;
+    }
+    .nos-pizzas, .presentation {
+        padding: 1rem;
+    }
+    article {
+        margin: 0;
+    }
+    .presentation {
+        clip-path: none;
+    }
+    .presentation ul, .livraison ul {
+        flex-direction: column-reverse;
+    }
+    .trust-card {
+        max-width: 50%;
+        width: 50%;
+    }
+    .livraison-right, .livraison-left {
+        width: 100%;
+    }
+    .livraison-logo {
+        flex-direction: row;
+    }
+    .livraison-left .livraison-logo {
+        flex-direction: row!important;
+    }
+    .formulaire.btn {
+        flex-direction: column;
+    }
+    .haut a {
+        bottom: 2rem;
+        right: 2rem;
+    }
+    
+}
+
+@media (width < 750px) {
+    .navbar-left ul {
+        flex-direction: column;
+    }
+    .navbar img {
+        margin: 0 0 -3rem;
+    }
+    .navbar-right {
+        margin-top: 2rem;
+    }
+    .nos-pizzas-bottom p, .presentation-left {
+        padding: 1rem;
+    }
+    .slider .card:nth-child(2), .slider .card:nth-child(4), .trust-list .trust-card:nth-child(2), .trust-list .trust-card:nth-child(4) {
+        display: none;
+    }
+    .haut a {
+        bottom: 1rem;
+        right: 1rem;
+    }
+   
+}
