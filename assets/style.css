@@ -9,14 +9,30 @@
     --dark: #5b454e;
     --white: #fff;
 }
+@keyframes reveal {
+    from {
+       transform: scale(0);
+       opacity: (0);
+    }   
+    to {
+       transform: (1);
+       opacity: (1);
+    }
+   }
 *,::after,::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-h1 , h2, h3 {
+
+
+h1, h2, h3 {
     font-family: "Pinyon Script";
+    animation: reveal linear 1s;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 30%;
 }
 h1 {
     font-size: 5rem;
@@ -55,7 +71,7 @@ span {
     border-radius: 2rem;
     font-size: 1.2rem;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: 1s ease;
 }
 .btn-secondary a {
     background-color: var(--white);
@@ -64,6 +80,7 @@ span {
 .btn-secondary a:hover{
     background-color: var(--blue);
     color: var(--white);
+    box-shadow: 10px 5px 5px var(--blue);
 }
 
 .btn-primaire a {
@@ -72,9 +89,11 @@ span {
 }
 .btn-primaire a:hover{
     background-color: var(--red);
+    box-shadow: 10px 5px 5px var(--red);
 }
 .btn-third {
     text-align: center;
+    
 }
 .btn-third a {
     background-color: var(--red);
@@ -82,6 +101,14 @@ span {
 }
 .btn-third a:hover{
     background-color: var(--blue);
+    box-shadow: 10px 5px 5px var(--blue);
+}
+
+img {
+    animation: reveal linear 1s;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 30%;
 }
 /* reglage globaux du site web */
 
@@ -363,6 +390,10 @@ footer a {
     margin: 2rem;
     max-width: 100%;
     width: 300px;
+    animation: reveal linear 1s;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
 }
 .commande img {
     width: 100%;
@@ -531,7 +562,7 @@ a{
 /* Code Alexis CSS Page contact */
 
 @media (width < 1000px ) {
-    .navbar, .slider, .trust-list, .nos-pizzas-bottom {
+    .navbar, .nos-pizzas-bottom {
         flex-direction: column;
     }
     .title img {
@@ -546,12 +577,19 @@ a{
     .presentation {
         clip-path: none;
     }
+    .trust-card {
+        max-width: 50%;
+    }
     .presentation ul, .livraison ul {
         flex-direction: column-reverse;
     }
-    .trust-card {
-        max-width: 50%;
-        width: 50%;
+    .slider .card:nth-child(2), .slider .card:nth-child(4), .trust-list .trust-card:nth-child(2), .trust-list .trust-card:nth-child(4) {
+        display: none;
+    }
+   
+    .livraison {
+        padding: 0 1rem;
+        margin-bottom: 2rem;
     }
     .livraison-right, .livraison-left {
         width: 100%;
@@ -565,11 +603,23 @@ a{
     .formulaire.btn {
         flex-direction: column;
     }
+    footer {
+        font-size: 0.8rem;
+    }
     .haut a {
         bottom: 2rem;
         right: 2rem;
     }
-}
+
+    .haut a {
+        width: 2rem;
+        height: 2rem;
+        bottom: 5rem;
+        right: 5rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
     /* Code alexis */
     @media (width < 1000px ) {
        .premier ul{flex-direction: column;
@@ -610,7 +660,7 @@ a{
     /* Code alexis */ 
 
 
-@media (width < 750px) {
+@media (width < 550px) {
     .navbar-left ul {
         flex-direction: column;
     }
@@ -627,7 +677,7 @@ a{
         display: none;
     }
     .haut a {
-        bottom: 1rem;
+        bottom: 5rem;
         right: 1rem;
     }
 }
