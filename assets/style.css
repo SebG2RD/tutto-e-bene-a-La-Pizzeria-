@@ -110,12 +110,15 @@ img {
     animation-range-start: cover 0%;
     animation-range-end: contain 30%;
 }
+
+.menu-mobile {
+    display: none;
+}
 /* reglage globaux du site web */
 
 nav {
     background-color: var(--red);
     color: var(--white);
-    padding: 1rem 0;
     border-top: 3px solid var(--yellow);
     width: 100%;
 }
@@ -379,6 +382,9 @@ footer a {
 }
 .formulaire input {
     margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid var(--red);
 }
 .commande-list {
     flex-direction: row;
@@ -402,7 +408,7 @@ footer a {
     gap: 1rem;
 }
 .commande-container {
-    min-height: 300px;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -411,6 +417,28 @@ footer a {
 .commande h2 {
     font-size: 2rem;
 }
+.quantity-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-input button {
+    width: 30px;
+    height: 30px;
+    background-color: var(--red);
+    border: none;
+    font-size: 20px;
+    color: var(--white);
+}
+
+.quantity-input input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid var(--red);
+    height: 30px;
+}
+
 .haut a {
     color: var(--white);
     width: 5rem;
@@ -448,13 +476,11 @@ footer a {
 /* Code Alexis CSS Page contact */
 form img{
     width: 2rem;
-    
 }
 .contact-form{
     display: flex;
 }
 .left-contact{
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -564,6 +590,37 @@ a{
 @media (width < 1000px ) {
     .navbar, .nos-pizzas-bottom {
         flex-direction: column;
+        position: relative;
+    }
+    .navbar-right {
+        margin-bottom: 2rem;
+    }
+    .navbar-left-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.471);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        justify-content: center!important;
+        align-items: center;
+        z-index: 9999;
+        margin-left: -100%;
+        transition: all 0.5 ease;
+    }
+
+    .menu-mobile {
+        width: 3rem!important;
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        z-index: 99999;
+    }
+    .mobile {
+        margin-left: 0;
     }
     .title img {
         width: 75%;
@@ -610,7 +667,6 @@ a{
         bottom: 2rem;
         right: 2rem;
     }
-
     .haut a {
         width: 2rem;
         height: 2rem;
@@ -619,46 +675,11 @@ a{
         padding: 0.5rem;
         font-size: 1rem;
     }
-
     /* Code alexis */
-    @media (width < 1000px ) {
-       .premier ul{flex-direction: column;
-        gap: 1.2rem;
-        }
-        .premier-left img{
-            max-width: 40rem ;
-        }
-        .premier-left img{
-            margin-top: 2rem;
-        }
-        .premier-right ul{
-            align-items: baseline;
-            width: 100%;
-            padding: 0 20%;
-        }
-        .second ul{
-            margin-top: 3rem;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 7rem;
-        }
-        
-        .contact-inputs{
-            width: 40rem;}
-        .right-contact img{
-            width: 40rem;
-        }
-        .socialmedia img{
-            width: 2.5rem;
-        }
-        .socialmedia{
-            position:fixed;
-            right: 2rem;
-        
-        }
-    }
-    /* Code alexis */ 
+    
 
+    /* Code alexis */ 
+}
 
 @media (width < 550px) {
     .navbar-left ul {
@@ -668,8 +689,9 @@ a{
         margin: 0 0 -3rem;
     }
     .navbar-right {
-        margin-top: 2rem;
+        margin: 2rem 0;
     }
+    
     .nos-pizzas-bottom p, .presentation-left {
         padding: 1rem;
     }
@@ -680,45 +702,7 @@ a{
         bottom: 5rem;
         right: 1rem;
     }
+   /* Code alexis */
+   
+   /* Code alexis */
 }
-   /* Code alexis */
-   @media (width < 750px) {
-
-   .premier ul{flex-direction: column;
-    gap: 1.2rem;
-    }
-    .premier-left img{
-        max-width: 30rem ;
-    }
-    .premier-left img{
-        margin-top: 2rem;
-    }
-    .premier-right ul{
-        align-items: baseline;
-        width: 100%;
-        padding: 0 20%;
-    }
-    .second ul{
-        margin-top: 3rem;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 7rem;
-    }
-    .contact-inputs{
-        width: 30rem;}
-    .right-contact img{
-        width: 30rem;
-    }
-    .socialmedia img{
-        width: 2.2rem;
-    }
-    .socialmedia{
-        position:fixed;
-        right: 2.5rem;
-        top: 30rem;
-        
-    
-    }
-   }
-   /* Code alexis */
-
