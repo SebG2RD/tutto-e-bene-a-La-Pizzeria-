@@ -9,14 +9,30 @@
     --dark: #5b454e;
     --white: #fff;
 }
+@keyframes reveal {
+    from {
+       transform: scale(0);
+       opacity: (0);
+    }   
+    to {
+       transform: (1);
+       opacity: (1);
+    }
+   }
 *,::after,::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-h1 , h2, h3 {
+
+
+h1, h2, h3 {
     font-family: "Pinyon Script";
+    animation: reveal linear 1s;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 30%;
 }
 h1 {
     font-size: 5rem;
@@ -55,7 +71,7 @@ span {
     border-radius: 2rem;
     font-size: 1.2rem;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: 1s ease;
 }
 .btn-secondary a {
     background-color: var(--white);
@@ -64,6 +80,7 @@ span {
 .btn-secondary a:hover{
     background-color: var(--blue);
     color: var(--white);
+    box-shadow: 10px 5px 5px var(--blue);
 }
 
 .btn-primaire a {
@@ -72,9 +89,11 @@ span {
 }
 .btn-primaire a:hover{
     background-color: var(--red);
+    box-shadow: 10px 5px 5px var(--red);
 }
 .btn-third {
     text-align: center;
+    
 }
 .btn-third a {
     background-color: var(--red);
@@ -82,13 +101,24 @@ span {
 }
 .btn-third a:hover{
     background-color: var(--blue);
+    box-shadow: 10px 5px 5px var(--blue);
+}
+
+img {
+    animation: reveal linear 1s;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 30%;
+}
+
+.menu-mobile {
+    display: none;
 }
 /* reglage globaux du site web */
 
 nav {
     background-color: var(--red);
     color: var(--white);
-    padding: 1rem 0;
     border-top: 3px solid var(--yellow);
     width: 100%;
 }
@@ -352,6 +382,9 @@ footer a {
 }
 .formulaire input {
     margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid var(--red);
 }
 .commande-list {
     flex-direction: row;
@@ -363,6 +396,10 @@ footer a {
     margin: 2rem;
     max-width: 100%;
     width: 300px;
+    animation: reveal linear 1s;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
 }
 .commande img {
     width: 100%;
@@ -371,7 +408,7 @@ footer a {
     gap: 1rem;
 }
 .commande-container {
-    min-height: 300px;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -380,6 +417,28 @@ footer a {
 .commande h2 {
     font-size: 2rem;
 }
+.quantity-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-input button {
+    width: 30px;
+    height: 30px;
+    background-color: var(--red);
+    border: none;
+    font-size: 20px;
+    color: var(--white);
+}
+
+.quantity-input input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid var(--red);
+    height: 30px;
+}
+
 .haut a {
     color: var(--white);
     width: 5rem;
@@ -420,13 +479,11 @@ main{
 }
 form img{
     width: 2rem;
-    
 }
 .contact-form{
     display: flex;
 }
 .left-contact{
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -534,8 +591,39 @@ a{
 /* Code Alexis CSS Page contact */
 
 @media (width < 1000px ) {
-    .navbar, .slider, .trust-list, .nos-pizzas-bottom {
+    .navbar, .nos-pizzas-bottom {
         flex-direction: column;
+        position: relative;
+    }
+    .navbar-right {
+        margin-bottom: 2rem;
+    }
+    .navbar-left-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.471);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        justify-content: center!important;
+        align-items: center;
+        z-index: 9999;
+        margin-left: -100%;
+        transition: all 0.5 ease;
+    }
+
+    .menu-mobile {
+        width: 3rem!important;
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        z-index: 99999;
+    }
+    .mobile {
+        margin-left: 0;
     }
     .title img {
         width: 75%;
@@ -549,12 +637,19 @@ a{
     .presentation {
         clip-path: none;
     }
+    .trust-card {
+        max-width: 50%;
+    }
     .presentation ul, .livraison ul {
         flex-direction: column-reverse;
     }
-    .trust-card {
-        max-width: 50%;
-        width: 50%;
+    .slider .card:nth-child(2), .slider .card:nth-child(4), .trust-list .trust-card:nth-child(2), .trust-list .trust-card:nth-child(4) {
+        display: none;
+    }
+   
+    .livraison {
+        padding: 0 1rem;
+        margin-bottom: 2rem;
     }
     .livraison-right, .livraison-left {
         width: 100%;
@@ -568,52 +663,28 @@ a{
     .formulaire.btn {
         flex-direction: column;
     }
+    footer {
+        font-size: 0.8rem;
+    }
     .haut a {
         bottom: 2rem;
         right: 2rem;
     }
-}
-    /* Code alexis */
-    @media (width < 1000px ) {
-       .premier ul{flex-direction: column;
-        gap: 1.2rem;
-        }
-        .premier-left img{
-            max-width: 40rem ;
-        }
-        .premier-left img{
-            margin-top: 2rem;
-        }
-        .premier-right ul{
-            align-items: baseline;
-            width: 100%;
-            padding: 0 20%;
-        }
-        .second ul{
-            margin-top: 3rem;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 7rem;
-        }
-        
-        .contact-inputs{
-            width: 40rem;}
-        .right-contact img{
-            width: 40rem;
-        }
-        .socialmedia img{
-            width: 2.5rem;
-        }
-        .socialmedia{
-            position:fixed;
-            right: 2rem;
-        
-        }
+    .haut a {
+        width: 2rem;
+        height: 2rem;
+        bottom: 5rem;
+        right: 5rem;
+        padding: 0.5rem;
+        font-size: 1rem;
     }
+    /* Code alexis */
+    
+
     /* Code alexis */ 
+}
 
-
-@media (width < 750px) {
+@media (width < 550px) {
     .navbar-left ul {
         flex-direction: column;
     }
@@ -621,8 +692,9 @@ a{
         margin: 0 0 -3rem;
     }
     .navbar-right {
-        margin-top: 2rem;
+        margin: 2rem 0;
     }
+    
     .nos-pizzas-bottom p, .presentation-left {
         padding: 1rem;
     }
@@ -630,10 +702,9 @@ a{
         display: none;
     }
     .haut a {
-        bottom: 1rem;
+        bottom: 5rem;
         right: 1rem;
     }
-}
    /* Code alexis */
    @media (width < 750px) {
 
@@ -671,5 +742,6 @@ a{
         top: 30rem;
     }
    }
-   /* Code alexis */
 
+   /* Code alexis */
+}
