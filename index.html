@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="assets/style.css">
-    <title>Chez Jonathan Pizzeria</title>
+    <link rel="shortcut icon" href="assets/img/logo pizzeria.png" type="image/x-icon">
+    <script src="assets/js/script.js" defer></script>
+    <title>Nos pizzas - Chez Jonathan Pizzeria</title>
 </head>
 <body>
     <nav>
@@ -13,9 +15,13 @@
             <li class="navbar-left">
                 <ul>
                     <li><a href="index.html"><img src="./assets/img/logo pizzeria.png" alt="Logo pizzeria"></a></li>
-                    <li>Qui sommes-nous ?</li>
-                    <li><a href="nos-pizzas.html">Nos pizzas</a></li>
-                    <li>Commander</li>
+                    <li>
+                        <ul class="navbar-left-menu">
+                            <li>Qui sommes-nous ?</li>
+                            <li><a href="nos-pizzas.html">Nos pizzas</a></li>
+                            <li>Commander</li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
             <li class="navbar-right">
@@ -23,6 +29,9 @@
                     <a href="contact.html">Nous contacter</a>
                 </div>
             </li>
+            <li>
+                <img src="assets/img/menu-btn.png" alt="menu hambuger" class="menu-mobile">
+            </i>
         </ul>
     </nav>
     <main>
@@ -87,9 +96,7 @@
                 <ul class="nos-pizzas-top">
                     <li class="nos-pizzas-top-left"><img src="./assets/img/plateau de presentation.png" alt="image plateau de pizza"></li>
                     <li class="nos-pizzas-top-right">
-                        <h2>
-                            Nos pizzas sont <span class="title-span">faite maison</span>
-                        </h2>
+                        <h2>Nos pizzas sont <span class="title-span">faite maison</span></h2>
                     </li>
                 </ul>
                 <ul class="nos-pizzas-bottom">
@@ -172,3 +179,4 @@
     </div>
 </body>
 </html>
+
