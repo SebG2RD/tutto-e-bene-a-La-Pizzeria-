@@ -670,6 +670,49 @@ a{
         bottom: 2rem;
         right: 2rem;
     }
+<<<<<<< HEAD
+}
+    /* Code alexis */
+    @media (width < 1000px ) {
+       .premier ul{flex-direction: column;
+        gap: 1.2rem;
+        }
+        .premier-left img{
+            max-width: 100% ;
+        }
+        .premier-left img{
+            margin-top: 2rem;
+        }
+        .premier-right ul{
+            align-items: baseline;
+            width: 100%;
+            padding: 0 20%;
+        }
+        .second ul{
+            margin-top: 3rem;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 7rem;
+        }
+        
+        .contact-inputs{
+            width: 40rem;}
+        .right-contact img{
+            width: 40rem;
+        }
+        .socialmedia img{
+            width: 2rem;
+        }
+        .socialmedia{
+            position:fixed;
+            right: 2rem;
+        
+        }
+        .second{
+            margin: 0 ;
+            width: 100%;
+        }
+=======
     .haut a {
         width: 2rem;
         height: 2rem;
@@ -677,6 +720,7 @@ a{
         right: 5rem;
         padding: 0.5rem;
         font-size: 1rem;
+>>>>>>> ee00ee7ec056e2b2ba2e0ead9a8b63b5c971ed06
     }
     /* Code alexis */
     
@@ -708,38 +752,53 @@ a{
    /* Code alexis */
    @media (width < 750px) {
 
+    .premier-info{
+        margin-right: 0rem;
+
+    }
+
    .premier ul{flex-direction: column;
     gap: 1.2rem;
     }
     .premier-left img{
-        max-width: 30rem ;
+        max-width: 80%rem ;
     }
     .premier-left img{
         margin-top: 2rem;
+    }
+    .premier-right{
+        width: 100%;
     }
     .premier-right ul{
         align-items: baseline;
         width: 100%;
         padding: 0 20%;
+        font-size: 2rem;
+    }
+    .contact-form{
+        width: 100%;
     }
     .second ul{
         margin-top: 3rem;
         flex-direction: column;
         justify-content: center;
         padding-left: 7rem;
+
     }
     .contact-inputs{
         width: 30rem;}
     .right-contact img{
-        width: 30rem;
+        width: 100%;
     }
     .socialmedia img{
-        width: 2.2rem;
+        width: 0rem;
     }
-    .socialmedia{
-        position:fixed;
-        right: 2.5rem;
-        top: 30rem;
+    .second{
+        margin: 0;
+        width: 80%;
+    }
+    .left-contact{
+        margin: 0;
     }
    }
 
