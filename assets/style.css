@@ -415,6 +415,9 @@ footer a {
 
 
 /* Code Alexis CSS Page contact */
+main{
+    margin-top: 3rem;
+}
 form img{
     width: 2rem;
     
@@ -666,8 +669,6 @@ a{
         position:fixed;
         right: 2.5rem;
         top: 30rem;
-        
-    
     }
    }
    /* Code alexis */
