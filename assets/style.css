@@ -726,11 +726,12 @@ a{
         font-size: 1rem;
 
     }
+}
     /* Code alexis */
     
 
     /* Code alexis */ 
-}
+
 
 @media (width < 550px) {
     .navbar-left ul {
@@ -758,7 +759,6 @@ a{
 
     .premier-info{
         margin-right: 0rem;
-
     }
 
    .premier ul{flex-direction: column;
@@ -777,7 +777,7 @@ a{
         align-items: baseline;
         width: 100%;
         padding: 0 20%;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .contact-form{
         width: 100%;
