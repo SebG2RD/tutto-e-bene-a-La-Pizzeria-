@@ -670,7 +670,7 @@ a{
         bottom: 2rem;
         right: 2rem;
     }
-<<<<<<< HEAD
+
 }
     /* Code alexis */
     @media (width < 1000px ) {
@@ -712,7 +712,7 @@ a{
             margin: 0 ;
             width: 100%;
         }
-=======
+
     .haut a {
         width: 2rem;
         height: 2rem;
@@ -720,13 +720,14 @@ a{
         right: 5rem;
         padding: 0.5rem;
         font-size: 1rem;
->>>>>>> ee00ee7ec056e2b2ba2e0ead9a8b63b5c971ed06
+
     }
+}
     /* Code alexis */
     
 
     /* Code alexis */ 
-}
+
 
 @media (width < 550px) {
     .navbar-left ul {
@@ -754,7 +755,6 @@ a{
 
     .premier-info{
         margin-right: 0rem;
-
     }
 
    .premier ul{flex-direction: column;
@@ -773,7 +773,7 @@ a{
         align-items: baseline;
         width: 100%;
         padding: 0 20%;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .contact-form{
         width: 100%;
