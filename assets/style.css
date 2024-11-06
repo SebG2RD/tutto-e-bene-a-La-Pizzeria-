@@ -128,6 +128,9 @@ nav {
     gap: 2rem;
     font-size: 1.5rem;
 }
+.navbar {
+    margin-right: -25rem;
+}
 .navbar img {
     width: 10rem;
 }
