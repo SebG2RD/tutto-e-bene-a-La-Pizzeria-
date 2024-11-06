@@ -596,6 +596,9 @@ a{
         flex-direction: column;
         position: relative;
     }
+    .navbar {
+        margin-right: 0rem;
+    }
     .navbar-right {
         margin-bottom: 2rem;
     }
